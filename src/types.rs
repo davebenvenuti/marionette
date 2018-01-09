@@ -37,14 +37,3 @@ impl Server {
         }
     }
 }
-
-pub struct Connection<'sess> {
-    session: Session,
-    agent: Agent<'sess>
-}
-
-impl<'sess> Connection<'sess> {
-    pub fn new(session: Session, agent: Agent) -> Connection {
-        Connection { session, agent }
-    }
-}

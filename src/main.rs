@@ -12,7 +12,6 @@ mod errors;
 mod types;
 
 use types::Server;
-use types::Connection;
 use errors::AuthenticationError;
 
 fn create_tcp_stream(server: &Server) -> TcpStream {
