@@ -2,9 +2,13 @@
 Command line app that runs bash commands on one or more remote machines reachable via ssh, authenticating with your locally running ssh-agent
 
 ## Requirements
+
+### General
+- libssh2
+
+### Development
 - Rust v.?
 - cmake
-- libssh2
 
 ## Usage
 
