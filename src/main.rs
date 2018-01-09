@@ -107,7 +107,7 @@ fn main() {
                     let mut channel = session.channel_session().unwrap();
                     channel.exec(&command).unwrap();
                     let mut s = String::new();
-                    // see https://doc.rust-lang.org/std/io/trait.BufRead.html for reading line by line
+
                     channel.read_to_string(&mut s).unwrap();
 
                     println!("************[{}] ************\n{}", server.host, s);
